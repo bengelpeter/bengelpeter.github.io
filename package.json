@@ -1,0 +1,22 @@
+{
+  "name": "peterbengelportfolio",
+  "version": "1.0.0",
+  "description": "Portfolio homepage for Peter Bengel built with Next.js.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [
+    "nextjs",
+    "portfolio",
+    "peter-bengel"
+  ],
+  "author": "Peter Bengel",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^16.2.10",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  }
+}
