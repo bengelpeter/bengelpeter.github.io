@@ -1,290 +1,260 @@
-const heroSignals = [
+const currentFocus = [
+  "Upgrading old .NET apps into cleaner modern products",
+  "Building offline-first flows that do not panic when signal drops",
+  "Automating tedious work with Azure, SQL, and integration pipelines",
+];
+
+const scaleSignals = [
   {
-    title: "Offline-first inspection software",
-    eyebrow: "Field Reliability",
-    detail:
-      "Delivered a .NET MAUI Blazor Hybrid platform trusted by 300+ technicians for dependable local capture and synchronization.",
+    value: "1,000+",
+    label: "franchise locations supported",
   },
   {
-    title: "Modernization without business drag",
-    eyebrow: "Platform Modernization",
-    detail:
-      "Upgraded legacy .NET systems to modern Blazor and React experiences while improving performance and release velocity.",
+    value: "300+",
+    label: "technicians using the mobile workflow",
   },
   {
-    title: "Azure pipelines and secure integrations",
-    eyebrow: "Operational Automation",
-    detail:
-      "Built microservices, ETL flows, and SQL automation that removed bottlenecks and improved reporting accuracy across the business.",
+    value: "High-Traffic",
+    label: "career platform product work",
+  },
+  {
+    value: "Global",
+    label: "multilingual and international transaction support",
   },
 ];
 
-const boardNodes = [
+const projects = [
   {
-    label: "Interface",
-    value: "Blazor / React",
-  },
-  {
-    label: "Platform",
-    value: ".NET 10 / Azure",
-  },
-  {
-    label: "Workflow",
-    value: "Offline sync / SQL",
-  },
-];
-
-const boardTags = [
-  "Offline-first",
-  ".NET 10",
-  "Azure architecture",
-  "Blazor Hybrid",
-  "React",
-  "Operational automation",
-];
-
-const impactCards = [
-  {
-    index: "01",
-    title: "Software that holds up in the real world",
+    id: "01",
+    title: "Franchise-scale platforms, not small brochure apps",
     body:
-      "I build systems for environments where reliability matters more than novelty: field work, inspections, operations, payroll, reporting, and cross-team delivery.",
-    points: [
-      "Offline-first architecture",
-      "High-trust workflow design",
-      "Clear UI under pressure",
-    ],
+      "I’ve built software that had to support broad distributed operations, including a multilingual franchise job posting platform built with .NET and Entity Framework Code-First that scaled across more than 1,000 franchise locations.",
+    tags: ["1,000+ locations", "Multilingual", "Entity Framework"],
+    tone: "lime",
   },
   {
-    index: "02",
-    title: "Legacy stacks turned into modern products",
+    id: "02",
+    title: "High-traffic web products that had to perform",
     body:
-      "My best work usually starts where software is already important. I modernize established applications carefully, preserving trust while improving speed, maintainability, and user experience.",
-    points: [
-      ".NET Framework to .NET 10",
-      "Blazor and React frontends",
-      "Measured performance gains",
-    ],
+      "I’ve worked on high-traffic product surfaces too, including a career platform where I shipped search improvements, mobile-responsive layouts, and performance-focused updates that improved engagement and reduced page load time.",
+    tags: ["High traffic", "Responsive UX", "Performance"],
+    tone: "ink",
   },
   {
-    index: "03",
-    title: "Automation that gives time back",
+    id: "03",
+    title: "Field mobile software used daily by real teams",
     body:
-      "From Azure Functions to SQL pipelines, I design integrations that reduce repeat work and make business-critical operations more dependable.",
-    points: [
-      "Azure Functions and Logic Apps",
-      "ETL and reporting pipelines",
-      "Salesforce and data integrations",
-    ],
+      "I’ve also led field-focused mobile work, including moving an inspection platform into .NET MAUI Blazor Hybrid for 300+ technicians with dependable local capture, synchronization, and offline-first workflows.",
+    tags: ["300+ technicians", "Offline-first", ".NET MAUI"],
+    tone: "orange",
+  },
+  {
+    id: "04",
+    title: "International payments and operational workflows",
+    body:
+      "Beyond user-facing apps, I’ve built secure payment processing with real-time currency conversion APIs and automation pipelines that removed repeat work from payroll, reporting, and HR operations.",
+    tags: ["International payments", "Currency APIs", "Automation"],
+    tone: "teal",
   },
 ];
 
-const experience = [
+const reasons = [
+  {
+    number: "01",
+    title: "I like ugly middle states",
+    body:
+      "Half-finished migrations, old tools nobody wants to touch, weird workflows, too many edge cases. That is the stuff I naturally lean into.",
+  },
+  {
+    number: "02",
+    title: "I care about feel",
+    body:
+      "Even internal business software should feel readable, intentional, and calm. I do not like making users fight their tools.",
+  },
+  {
+    number: "03",
+    title: "I build for trust",
+    body:
+      "Offline behavior, data integrity, careful releases, clean handoffs. The best compliment is when people stop worrying about the software.",
+  },
+];
+
+const timeline = [
   {
     years: "2020 - 2026",
     company: "Silco Fire & Security",
     role: "Lead Developer",
     summary:
-      "Led modernization, mobile reliability, Azure architecture, DevOps workflow management, and engineering standards for internal inspection and operations platforms.",
+      "Led modernization, field-app reliability, Azure architecture, DevOps workflow management, and engineering standards for internal software that people depended on every day.",
   },
   {
     years: "2016 - Present",
     company: "Freelance",
-    role: "Freelance Web Developer",
+    role: "Solo Builder",
     summary:
-      "Built compliance, broadcasting, e-commerce, and event-management platforms across ASP.NET Core, React, Azure App Service, Azure SQL, and Cosmos DB.",
+      "Built compliance, broadcasting, e-commerce, and event-management products across ASP.NET Core, React, Azure App Service, Azure SQL, and Cosmos DB.",
   },
   {
     years: "2019 - 2020",
     company: "Robert Half Technology",
     role: "IT Consultant",
     summary:
-      "Delivered multilingual .NET platform work, responsive web improvements, and secure international payment integrations for high-traffic products.",
+      "Delivered multilingual .NET work, responsive product improvements, and secure payment integrations for high-traffic software.",
   },
   {
     years: "2015 - 2019",
     company: "Clarke Fire Protection Products",
     role: "Software Developer",
     summary:
-      "Built web, desktop, and mobile systems, including hardware-connected WPF tooling, Xamarin apps, and reporting migrations for global manufacturing workflows.",
+      "Built web, desktop, and mobile systems, including WPF tooling, Xamarin apps, and reporting migrations for manufacturing workflows.",
   },
 ];
 
-const stackGroups = [
-  {
-    label: "Application Engineering",
-    value: ".NET, C#, React, Blazor, .NET MAUI, TypeScript, REST APIs",
-  },
-  {
-    label: "Cloud and Data",
-    value:
-      "Azure App Service, Azure Functions, Azure SQL, Data Factory, Logic Apps, Entity Framework, SQL",
-  },
-  {
-    label: "Delivery",
-    value: "Azure DevOps, CI/CD, Agile delivery, code reviews, mentoring, AI-assisted development",
-  },
-];
-
-const operatingPrinciples = [
-  "Design for reliability before polish when the software supports real operational work.",
-  "Modernize in a way that keeps business teams confident while the platform gets better.",
-  "Reduce friction with architecture, automation, and clear interfaces instead of adding process.",
+const stack = [
+  ".NET 10",
+  "C#",
+  "Blazor",
+  "React",
+  ".NET MAUI",
+  "Azure",
+  "Azure SQL",
+  "Functions",
+  "Logic Apps",
+  "Entity Framework",
+  "REST APIs",
+  "TypeScript",
+  "Offline-first",
+  "Azure DevOps",
+  "CI/CD",
+  "SQL",
 ];
 
 export default function Home() {
   return (
-    <main className="page-shell">
-      <div className="ambient ambient-left" />
-      <div className="ambient ambient-right" />
-      <div className="grid-wash" />
+    <main className="site-shell">
+      <div className="color-orb orb-left" />
+      <div className="color-orb orb-right" />
+      <div className="grain-lines" />
 
-      <section className="hero-shell">
-        <header className="masthead">
-          <div className="brand-block">
+      <section className="hero-stage">
+        <header className="topbar">
+          <div className="brand">
             <span className="brand-mark">PB</span>
-            <div className="brand-copy">
+            <div>
               <p className="brand-name">Peter Bengel</p>
-              <p className="brand-role">Lead Software Developer</p>
+              <p className="brand-role">solo dev with enterprise battle scars</p>
             </div>
           </div>
 
-          <nav className="nav-links" aria-label="Primary">
-            <a href="#impact">Impact</a>
-            <a href="#experience">Experience</a>
+          <nav className="topnav" aria-label="Primary">
+            <a href="#work">Work</a>
+            <a href="#story">Story</a>
             <a href="#stack">Stack</a>
             <a href="#contact">Contact</a>
           </nav>
         </header>
 
-        <section className="hero-panel">
-          <div className="hero-grid">
-            <div className="hero-copy">
-              <p className="eyebrow">Cincinnati based lead developer</p>
-              <h1>Enterprise software with field-tested reliability.</h1>
-              <p className="hero-text">
-                I build modern .NET and Azure products for teams that depend on
-                their software every day, with a focus on offline-first
-                workflows, legacy modernization, secure integrations, and calm,
-                professional interfaces.
-              </p>
+        <div className="hero-grid">
+          <div className="hero-copy">
+            <p className="eyebrow">Peter Bengel // Cincinnati // .NET, Azure, mobile, web</p>
+            <h1>I make old, messy software feel alive again.</h1>
+            <p className="hero-text">
+              Most of my work lives in the places where software actually has to
+              hold up: field apps, inspection tools, legacy systems that need a
+              second life, and automation that quietly saves teams hours every
+              week.
+            </p>
 
-              <div className="hero-actions">
-                <a className="button button-primary" href="mailto:bengel.peter@gmail.com">
-                  bengel.peter@gmail.com
-                </a>
-                <a
-                  className="button button-secondary"
-                  href="/peter-bengel-resume.pdf"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Resume PDF
-                </a>
-              </div>
-
-              <div className="hero-meta">
-                <a
-                  href="https://www.linkedin.com/in/peter-bengel-8a56b4108/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  LinkedIn
-                </a>
-                <a href="https://github.com/bengelpeter" target="_blank" rel="noreferrer">
-                  GitHub
-                </a>
-                <span>Cincinnati, Ohio</span>
-              </div>
-
-              <div className="hero-facts">
-                <div>
-                  <p className="fact-label">Specialties</p>
-                  <p className="fact-value">
-                    .NET MAUI, Blazor, React, Azure, SQL, modernizing legacy
-                    systems
-                  </p>
-                </div>
-                <div>
-                  <p className="fact-label">Best Fit</p>
-                  <p className="fact-value">
-                    Senior product, platform, and modernization work where
-                    reliability is non-negotiable
-                  </p>
-                </div>
-              </div>
+            <div className="hero-actions">
+              <a className="button button-primary" href="mailto:bengel.peter@gmail.com">
+                Let&apos;s build something
+              </a>
+              <a
+                className="button button-secondary"
+                href="/peter-bengel-resume.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Resume PDF
+              </a>
             </div>
 
-            <aside className="signal-board" aria-label="Selected work themes">
-              <div className="board-header">
-                <p className="eyebrow">Selected signals</p>
-                <p className="board-summary">
-                  The strongest themes across my work are durable field
-                  software, careful modernization, and automation that removes
-                  operational drag.
-                </p>
-              </div>
-
-              <div className="board-topology">
-                <div className="board-tags" aria-label="Core themes">
-                  {boardTags.map((tag) => (
-                    <span className="board-tag" key={tag}>
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-
-                <div className="board-route" aria-label="Architecture focus">
-                  {boardNodes.map((node, index) => (
-                    <article className="board-node" key={node.label}>
-                      <p className="board-node-label">{node.label}</p>
-                      <p className="board-node-value">{node.value}</p>
-                      {index < boardNodes.length - 1 ? (
-                        <span className="board-node-link" aria-hidden="true" />
-                      ) : null}
-                    </article>
-                  ))}
-                </div>
-              </div>
-
-              <div className="signal-list">
-                {heroSignals.map((signal) => (
-                  <article className="signal-card" key={signal.title}>
-                    <p className="signal-eyebrow">{signal.eyebrow}</p>
-                    <h2>{signal.title}</h2>
-                    <p>{signal.detail}</p>
-                  </article>
-                ))}
-              </div>
-            </aside>
+            <div className="hero-links">
+              <a
+                href="https://www.linkedin.com/in/peter-bengel-8a56b4108/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                LinkedIn
+              </a>
+              <a href="https://github.com/bengelpeter" target="_blank" rel="noreferrer">
+                GitHub
+              </a>
+              <span>Cincinnati, Ohio</span>
+            </div>
           </div>
-        </section>
+
+          <aside className="hero-board" aria-label="Current focus board">
+            <div className="hero-badge">modernizing across web, cloud, and mobile</div>
+
+            <article className="board-panel board-panel-main">
+              <p className="board-label">Currently into</p>
+              <ul className="board-list">
+                {currentFocus.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </article>
+
+            <div className="board-notes">
+              <article className="board-note board-note-a">
+                <p className="board-label">Vibe</p>
+                <p>Less dashboard. More useful.</p>
+              </article>
+              <article className="board-note board-note-b">
+                <p className="board-label">Default mode</p>
+                <p>Modernize carefully. Keep trust intact.</p>
+              </article>
+            </div>
+          </aside>
+        </div>
       </section>
 
-      <section className="section section-intro">
-        <p>
-          Lead developer with deep experience in enterprise .NET, Azure
-          architecture, operational automation, and building products that stay
-          clear and dependable under real business pressure.
-        </p>
-      </section>
-
-      <section className="section" id="impact">
-        <div className="section-heading">
-          <p className="eyebrow">What I bring</p>
-          <h2>Technical depth, product judgment, and execution that scales beyond a single screen.</h2>
+      <section className="work-section" id="work">
+        <div className="section-heading split-heading">
+          <div>
+            <p className="section-label">Scale and range</p>
+            <h2>I have worked across franchise-scale platforms, high-traffic products, field mobile software, and operational systems.</h2>
+          </div>
+          <p className="section-side">
+            The point is not one app. The pattern is that I’ve shipped software
+            in very different environments where scale, reliability, and real
+            usage mattered.
+          </p>
         </div>
 
-        <div className="impact-grid">
-          {impactCards.map((card) => (
-            <article className={`impact-card impact-card-${card.index}`} key={card.title}>
-              <p className="impact-index">{card.index}</p>
-              <h3>{card.title}</h3>
-              <p className="impact-body">{card.body}</p>
-              <div className="impact-pills">
-                {card.points.map((point) => (
-                  <span className="impact-pill" key={point}>
-                    {point}
+        <div className="signal-strip" aria-label="Scale markers">
+          {scaleSignals.map((signal) => (
+            <article className="signal-chip" key={signal.label}>
+              <p className="signal-value">{signal.value}</p>
+              <p className="signal-label">{signal.label}</p>
+            </article>
+          ))}
+        </div>
+
+        <div className="project-layout">
+          {projects.map((project) => (
+            <article className={`project-card project-card-${project.tone}`} key={project.id}>
+              <div className="project-head">
+                <p className="project-id">{project.id}</p>
+                <span className="project-line" />
+              </div>
+              <h3>{project.title}</h3>
+              <p className="project-body">{project.body}</p>
+              <div className="project-tags">
+                {project.tags.map((tag) => (
+                  <span className="project-tag" key={tag}>
+                    {tag}
                   </span>
                 ))}
               </div>
@@ -293,74 +263,77 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section experience-section" id="experience">
-        <div className="section-heading section-heading-wide">
-          <p className="eyebrow">Experience</p>
-          <h2>Built across internal product teams, consulting, and custom software delivery.</h2>
+      <section className="reasons-section">
+        <div className="section-heading">
+          <p className="section-label">Why people pull me in</p>
+          <h2>I&apos;m usually the best fit when the software needs both judgment and follow-through.</h2>
         </div>
 
-        <div className="experience-rail">
-          {experience.map((item) => (
-            <article className="experience-row" key={`${item.company}-${item.years}`}>
-              <div className="experience-year">{item.years}</div>
-              <div className="experience-main">
-                <div className="experience-head">
+        <div className="reason-layout">
+          {reasons.map((reason) => (
+            <article className="reason-card" key={reason.title}>
+              <p className="reason-number">{reason.number}</p>
+              <h3>{reason.title}</h3>
+              <p>{reason.body}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="story-section" id="story">
+        <div className="section-heading">
+          <p className="section-label">Story</p>
+          <h2>A timeline built around shipping, modernizing, fixing, and making software less painful to use.</h2>
+        </div>
+
+        <div className="timeline-shell">
+          {timeline.map((item) => (
+            <article className="timeline-item" key={`${item.company}-${item.years}`}>
+              <div className="timeline-years">{item.years}</div>
+              <div className="timeline-main">
+                <div className="timeline-head">
                   <h3>{item.company}</h3>
                   <p>{item.role}</p>
                 </div>
-                <p className="experience-summary">{item.summary}</p>
+                <p className="timeline-text">{item.summary}</p>
               </div>
             </article>
           ))}
         </div>
       </section>
 
-      <section className="section stack-section" id="stack">
-        <div className="stack-panel">
-          <div className="section-heading stack-heading">
-            <p className="eyebrow">Core stack</p>
-            <h2>Comfortable at the intersection of application engineering, Azure systems, and delivery leadership.</h2>
+      <section className="stack-section" id="stack">
+        <div className="stack-shell">
+          <div className="section-heading">
+            <p className="section-label">Stack</p>
+            <h2>The tools I keep reaching for when the software needs to last.</h2>
           </div>
 
-          <div className="stack-list">
-            {stackGroups.map((group) => (
-              <article className="stack-row" key={group.label}>
-                <p className="stack-label">{group.label}</p>
-                <p className="stack-value">{group.value}</p>
-              </article>
+          <div className="stack-cloud">
+            {stack.map((item, index) => (
+              <span className={`stack-chip stack-chip-${(index % 4) + 1}`} key={item}>
+                {item}
+              </span>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section principles-section">
-        <div className="section-heading">
-          <p className="eyebrow">How I operate</p>
-          <h2>My default approach is practical, calm, and built around trust.</h2>
-        </div>
+      <section className="contact-section" id="contact">
+        <div className="contact-shell">
+          <div className="contact-copy">
+            <p className="section-label">Contact</p>
+            <h2>If you need somebody who likes the ugly middle of a project as much as the polished ending, that&apos;s me.</h2>
+            <p>
+              I like building software that people can actually trust once it
+              ships, especially when the work involves messy realities, older
+              systems, and real operational pressure.
+            </p>
+          </div>
 
-        <div className="principles-grid">
-          {operatingPrinciples.map((principle, index) => (
-            <article className="principle-card" key={principle}>
-              <p className="principle-index">0{index + 1}</p>
-              <p>{principle}</p>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="section contact-section" id="contact">
-        <div className="contact-card">
-          <p className="eyebrow">Contact</p>
-          <h2>Available for senior engineering, modernization, and high-trust product work.</h2>
-          <p>
-            If you&apos;re building software that needs to be dependable in the
-            real world, I&apos;d be glad to talk.
-          </p>
-
-          <div className="hero-actions">
+          <div className="contact-actions">
             <a className="button button-primary" href="mailto:bengel.peter@gmail.com">
-              Email Peter
+              bengel.peter@gmail.com
             </a>
             <a
               className="button button-secondary"
