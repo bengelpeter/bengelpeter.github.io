@@ -14,3 +14,8 @@ npm run dev
 ```bash
 npm run build
 ```
+
+## Deploy
+
+The site is configured for static export and GitHub Pages deployment through
+`.github/workflows/deploy.yml`.
