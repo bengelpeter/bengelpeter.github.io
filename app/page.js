@@ -1,7 +1,7 @@
 const currentFocus = [
-  "Upgrading old .NET apps into cleaner modern products",
+  "Leading software development and modernization projects from planning through delivery",
   "Building offline-first flows that do not panic when signal drops",
-  "Automating tedious work with Azure, SQL, and integration pipelines",
+  "Improving operations with Azure, SQL, BI, and integration pipelines",
 ];
 
 const scaleSignals = [
@@ -21,6 +21,10 @@ const scaleSignals = [
     value: "Global",
     label: "multilingual and international transaction support",
   },
+  {
+    value: "Process + BI",
+    label: "reporting, payroll, and operational improvement work",
+  },
 ];
 
 const projects = [
@@ -28,7 +32,7 @@ const projects = [
     id: "01",
     title: "Franchise-scale platforms, not small brochure apps",
     body:
-      "I’ve built software that had to support broad distributed operations, including a multilingual franchise job posting platform built with .NET and Entity Framework Code-First that scaled across more than 1,000 franchise locations.",
+      "I've built software that had to support broad distributed operations, including a multilingual franchise job posting platform built with .NET and Entity Framework Code-First that scaled across more than 1,000 franchise locations.",
     tags: ["1,000+ locations", "Multilingual", "Entity Framework"],
     tone: "lime",
   },
@@ -36,7 +40,7 @@ const projects = [
     id: "02",
     title: "High-traffic web products that had to perform",
     body:
-      "I’ve worked on high-traffic product surfaces too, including a career platform where I shipped search improvements, mobile-responsive layouts, and performance-focused updates that improved engagement and reduced page load time.",
+      "I've worked on high-traffic product surfaces too, including a career platform where I shipped search improvements, mobile-responsive layouts, and performance-focused updates that improved engagement and reduced page load time.",
     tags: ["High traffic", "Responsive UX", "Performance"],
     tone: "ink",
   },
@@ -44,7 +48,7 @@ const projects = [
     id: "03",
     title: "Field mobile software used daily by real teams",
     body:
-      "I’ve also led field-focused mobile work, including moving an inspection platform into .NET MAUI Blazor Hybrid for 300+ technicians with dependable local capture, synchronization, and offline-first workflows.",
+      "I've also led field-focused mobile work, including moving an inspection platform into .NET MAUI Blazor Hybrid for 300+ technicians with dependable local capture, synchronization, and offline-first workflows.",
     tags: ["300+ technicians", "Offline-first", ".NET MAUI"],
     tone: "orange",
   },
@@ -52,30 +56,30 @@ const projects = [
     id: "04",
     title: "International payments and operational workflows",
     body:
-      "Beyond user-facing apps, I’ve built secure payment processing with real-time currency conversion APIs and automation pipelines that removed repeat work from payroll, reporting, and HR operations.",
+      "Beyond user-facing apps, I've built secure payment processing with real-time currency conversion APIs and automation pipelines that removed repeat work from payroll, reporting, and HR operations.",
     tags: ["International payments", "Currency APIs", "Automation"],
     tone: "teal",
   },
 ];
 
-const reasons = [
+const operationsImpact = [
   {
     number: "01",
-    title: "I like ugly middle states",
+    title: "Process improvement that saved real time",
     body:
-      "Half-finished migrations, old tools nobody wants to touch, weird workflows, too many edge cases. That is the stuff I naturally lean into.",
+      "I engineered C# and SQL workflows that automated weekly commission calculations and removed a full day of manual payroll work every week.",
   },
   {
     number: "02",
-    title: "I care about feel",
+    title: "BI and reporting that made decisions easier",
     body:
-      "Even internal business software should feel readable, intentional, and calm. I do not like making users fight their tools.",
+      "I migrated legacy Access, FoxPro, and Crystal Reports processes into .NET, SSRS, and Power BI solutions so teams could work from clearer and more reliable reporting.",
   },
   {
     number: "03",
-    title: "I build for trust",
+    title: "Operational models cleaned up at the source",
     body:
-      "Offline behavior, data integrity, careful releases, clean handoffs. The best compliment is when people stop worrying about the software.",
+      "I rewrote a complex SQL cost allocation model to improve financial reporting accuracy and cut data processing time by an entire week per financial cycle.",
   },
 ];
 
@@ -85,7 +89,7 @@ const timeline = [
     company: "Silco Fire & Security",
     role: "Lead Developer",
     summary:
-      "Led modernization, field-app reliability, Azure architecture, DevOps workflow management, and engineering standards for internal software that people depended on every day.",
+      "Led modernization, field-app reliability, Azure architecture, DevOps workflow management, operational automation, and engineering standards for internal software that people depended on every day.",
   },
   {
     years: "2016 - Present",
@@ -99,14 +103,14 @@ const timeline = [
     company: "Robert Half Technology",
     role: "IT Consultant",
     summary:
-      "Delivered multilingual .NET work, responsive product improvements, and secure payment integrations for high-traffic software.",
+      "Delivered multilingual .NET work, responsive product improvements, and secure payment integrations for high-traffic software with international transaction needs.",
   },
   {
     years: "2015 - 2019",
     company: "Clarke Fire Protection Products",
     role: "Software Developer",
     summary:
-      "Built web, desktop, and mobile systems, including WPF tooling, Xamarin apps, and reporting migrations for manufacturing workflows.",
+      "Built web, desktop, and mobile systems, including WPF tooling, Xamarin apps, and reporting migrations into SSRS and Power BI for manufacturing workflows.",
   },
 ];
 
@@ -120,6 +124,8 @@ const stack = [
   "Azure SQL",
   "Functions",
   "Logic Apps",
+  "Power BI",
+  "SSRS",
   "Entity Framework",
   "REST APIs",
   "TypeScript",
@@ -142,7 +148,7 @@ export default function Home() {
             <span className="brand-mark">PB</span>
             <div>
               <p className="brand-name">Peter Bengel</p>
-              <p className="brand-role">solo dev with enterprise battle scars</p>
+              <p className="brand-role">software development and project delivery</p>
             </div>
           </div>
 
@@ -156,13 +162,13 @@ export default function Home() {
 
         <div className="hero-grid">
           <div className="hero-copy">
-            <p className="eyebrow">Peter Bengel // Cincinnati // .NET, Azure, mobile, web</p>
-            <h1>I make old, messy software feel alive again.</h1>
+            <p className="eyebrow">Peter Bengel // Cincinnati // software development // project delivery</p>
+            <h1>I lead software projects that hold up when the work gets real.</h1>
             <p className="hero-text">
-              Most of my work lives in the places where software actually has to
-              hold up: field apps, inspection tools, legacy systems that need a
-              second life, and automation that quietly saves teams hours every
-              week.
+              From franchise-scale platforms and high-traffic web products to
+              field mobile apps, reporting, and process automation, I manage
+              and build systems that scale, stay reliable, and make the work
+              around them run better.
             </p>
 
             <div className="hero-actions">
@@ -208,12 +214,12 @@ export default function Home() {
 
             <div className="board-notes">
               <article className="board-note board-note-a">
-                <p className="board-label">Vibe</p>
-                <p>Less dashboard. More useful.</p>
+                <p className="board-label">Approach</p>
+                <p>Keep software clear, practical, and easy for real teams to use.</p>
               </article>
               <article className="board-note board-note-b">
-                <p className="board-label">Default mode</p>
-                <p>Modernize carefully. Keep trust intact.</p>
+                <p className="board-label">Delivery style</p>
+                <p>Lead modernization in a way that improves the system without disrupting the business.</p>
               </article>
             </div>
           </aside>
@@ -227,7 +233,7 @@ export default function Home() {
             <h2>I have worked across franchise-scale platforms, high-traffic products, field mobile software, and operational systems.</h2>
           </div>
           <p className="section-side">
-            The point is not one app. The pattern is that I’ve shipped software
+            The point is not one app. The pattern is that I&apos;ve shipped software
             in very different environments where scale, reliability, and real
             usage mattered.
           </p>
@@ -265,12 +271,12 @@ export default function Home() {
 
       <section className="reasons-section">
         <div className="section-heading">
-          <p className="section-label">Why people pull me in</p>
-          <h2>I&apos;m usually the best fit when the software needs both judgment and follow-through.</h2>
+          <p className="section-label">Operations impact</p>
+          <h2>A lot of my strongest work sits where software, reporting, and day-to-day business operations meet.</h2>
         </div>
 
         <div className="reason-layout">
-          {reasons.map((reason) => (
+          {operationsImpact.map((reason) => (
             <article className="reason-card" key={reason.title}>
               <p className="reason-number">{reason.number}</p>
               <h3>{reason.title}</h3>
